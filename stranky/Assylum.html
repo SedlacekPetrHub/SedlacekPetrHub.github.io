@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Assylum.">
+    <title>DYNAMIC ENVIRONMENT & AI NAVIGATION | Petr Sedláček</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="../styly/style.css">
+  </head>
+  <body class="page-vysledky">
+    <header class="top-menu" aria-label="Hlavní navigace">
+      <button class="nav-toggle" hidden aria-expanded="false" aria-controls="hlavni-nav" aria-label="Otevřít navigaci">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="hlavni-nav">
+        <ul>
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a href="2DNoiseGen.html">NOISE GENERATION</a></li>
+          <li><a href="3DTerrain.html">3D TERRAIN</a></li>
+          <li><a href="VoxelTest.html">VOXEL TEST</a></li>
+          <li><a href="DynamicAnima.html">DYNAMIC ANIMATION</a></li>
+          <li><a href="OrbitMechs.html">ORBITAL MECHANICS</a></li>
+          <li><a class="active" href="Assylum.html">ENVIRONMENT & AI</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="obsah" class="layout">
+      <section class="card">
+        <h2>DYNAMIC ENVIRONMENT & AI NAVIGATION</h2>
+        <p>
+          My latest project, that is still in development. The gist of the project is to allow the player to build custom buildings, 
+          and then let AI navigate through the environment in an organic fashion.
+        </p>
+        <figure class="fig">
+          <img src="../imgs/Assylum_house.png" alt="Assylum_house">
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Assylum_building.png" alt="Assylum_building">
+        </figure>
+        <p>Here you can see how the 2D build plan can dynamically generate a 3D building. The rooms aren't made from prefabricated models. Every wall is generated separately.</p>
+        <figure class="fig">
+          <img src="../imgs/Assylum_inside.png" alt="Assylum_inside">
+        </figure>
+        
+      </figure>
+        <figure class="fig">
+          <img src="../imgs/Assylum_stairs.png" alt="Assylum_stairs">
+        </figure>
+        <p>With the AI, first I tried using a Navmesh style of navigation. The problem was the static nature of this system. </p>
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Assylum_navmesh.png" alt="Assylum_navmesh">
+        </figure>
+        <p>Now I'm trying to implement a system that guides the character using several viewports.
+
+          <p>-lighting view: determines, if there is enough light for the character to see</p>
+          <p>-object/character view: shows interactable objects</p>
+          <p>-depth view: determines, how far certain objects and obstacles are</p>
+          <p>-normal view: shows collision angles, relative to the character</p>
+
+          With these, I'm making a more dynamic system, with which a character can navigate any environment, without any baked Navigation. </p>
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Assylum_editor1.png" alt="Assylum_editor1">
+        </figure>
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Assylum_viewAI1.png" alt="Assylum_viewAI1">
+        </figure>
+
+      </footer>
+    </main>
+  <script src="../styly/nav.js"></script>
+  </body>
+</html>

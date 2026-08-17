@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="2D Procedural noise generation tests.">
+    <title>2D NOISE GEN | Petr Sedláček</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="../styly/style.css">
+  </head>
+  <body class="page-vysledky">
+    <header class="top-menu" aria-label="Hlavní navigace">
+      <button class="nav-toggle" hidden aria-expanded="false" aria-controls="hlavni-nav" aria-label="Otevřít navigaci">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="hlavni-nav">
+        <ul>
+          <li><a href="../index.html">Introduction</a></li>
+          
+          <li><a class="active"  href="2DNoiseGen.html">NOISE GENERATION</a></li>
+          <li><a href="3DTerrain.html">3D TERRAIN</a></li>
+          <li><a href="VoxelTest.html">VOXEL TEST</a></li>
+          <li><a href="DynamicAnima.html">DYNAMIC ANIMATION</a></li>
+          <li><a href="OrbitMechs.html">ORBITAL MECHANICS</a></li>
+          <li><a href="Assylum.html">ENVIRONMENT & AI</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <main id="obsah" class="layout">
+      <section class="card">
+        <h2>2D NOISE GENERATION</h2>
+        <p>
+          With these projects, I taught myself how to utilize some basic 2d noise to generate levels and maps.
+        </p>
+        <figure class="fig">
+          <img src="../imgs/Zeptrans_map3.png" alt="Zeptrans_map3">
+        </figure>
+
+        <h2>Oposilation</h2>
+        <p>Here, the idea was to create a PVP game where players shoot each other across the map. Here I utilized the terrain generation in a "somewhat competent" manner, as I used procedural noise instead of random numbers. Also I tried for the first time to work with multiple viewports, as the game was made with splitscreen play in mind. </p>
+        <figure class="fig">
+          <img src="../imgs/Oposilation_island.png" alt="Oposilation_island">
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Oposilation_map.png" alt="Oposilation_map">
+        </figure>
+        
+        <figure class="fig">
+          <img src="../imgs/Oposilation_blast.png" alt="Oposilation_blast">
+        </figure>
+        
+        <h2>Knecht</h2>
+        <p>Here I created several layers of world generation. First, the world map generates as hexagon chunks... </p>
+        <figure class="fig">
+          <img src="../imgs/Knecht_map.png" alt="Knecht_map">
+        </figure>
+        <p>then the chunks get these interconnected paths... </p>
+        <figure class="fig">
+          <img src="../imgs/Knecht_paths.png" alt="Knecht_paths">
+        </figure>
+        <p>and after that, the paths represent 2D platformer levels with seeded generation, so the world stays consistent. The idea was to create an open world for a 2D platformer RPG. </p>
+        <figure class="fig">
+          <img src="../imgs/Knecht_level.png" alt="Knecht_level">
+        </figure>
+
+        <h2>Zeptarns</h2>
+        <p>In this game, I again tried to connect smaller levels with big procedural world. </p>
+        <figure class="fig">
+          <img src="../imgs/Zeptrans_map2.png" alt="Zeptrans_map2">
+        </figure>
+        <p>The Idea was to create a flight path on the world map, and then fly through the planned path, like it was a level.
+        This is probably my most visually pleasing work, as the worldmap looks quite polished </p>
+        <figure class="fig">
+          <img src="../imgs/Zeptrans_map1.png" alt="Zeptrans_map1">
+        </figure>
+        <figure class="fig">
+          <img src="../imgs/Zeptrans_lvl2.png" alt="Zeptrans_lvl2">
+        </figure>
+
+
+
+
+      </footer>
+    </main>
+  <script src="../styly/nav.js"></script>
+  </body>
+</html>
+
